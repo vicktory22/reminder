@@ -1,3 +1,10 @@
 {
-  "image": "denoland/deno:latest"
+  "image": "denoland/deno:latest",
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "containerEnv": {
+    "SHELL": "/usr/bin/zsh"
+},
+"extensions": [
+	"denoland.vscode-deno"
+]
 }
