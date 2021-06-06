@@ -13,7 +13,7 @@ export async function parseRequest(
     return { error: ValidationError.noHeaders() };
   }
 
-  const body = new TextDecoder().decode(await readAll(req.body));
+  const rawBody = JSON.parse(new TextDecoder().decode(await readAll(req.body)));
 
-  return { signature, timestamp, body };
+  return { signature, timestamp, rawBody };
 }
