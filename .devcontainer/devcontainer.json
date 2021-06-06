@@ -3,8 +3,8 @@
   "postCreateCommand": "bash .devcontainer/setup.sh",
   "containerEnv": {
     "SHELL": "/usr/bin/zsh"
-},
-"extensions": [
-	"denoland.vscode-deno"
-]
+  },
+  "extensions": [
+    "denoland.vscode-deno"
+  ]
 }
