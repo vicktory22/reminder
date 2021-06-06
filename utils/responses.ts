@@ -15,4 +15,6 @@ const ok = (message: string): ServerResponse => ({
   body: message,
 });
 
-export const Responses = { notFound, badRequest, ok };
+const pong = () => ({ status: 200, body: JSON.stringify({ type: 1 }) });
+
+export const Responses = { notFound, badRequest, pong, ok };
