@@ -3,7 +3,7 @@ import nacl from "https://cdn.skypack.dev/tweetnacl@v1.0.3?dts";
 
 export function validateRequest(
   signature: string,
-  timestamp: number,
+  timestamp: string,
   body: string,
 ): boolean {
   return nacl.sign.detached.verify(

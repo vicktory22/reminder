@@ -6,7 +6,7 @@ export type ServerResponse = {
 
 export type ParsedRequest = {
   signature?: string;
-  timestamp?: number;
+  timestamp?: string;
   rawBody?: string;
   error?: Error;
 };

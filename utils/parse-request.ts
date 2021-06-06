@@ -9,7 +9,7 @@ export async function parseRequest(
   const signature = req.headers.get("X-Signature-Ed25519");
   const timestamp = req.headers.get("X-Signature-Timestamp");
 
-  if (typeof signature !== "string" || typeof timestamp !== "number") {
+  if (typeof signature !== "string" || typeof timestamp !== "string") {
     return { error: ValidationError.noHeaders() };
   }
 

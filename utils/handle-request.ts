@@ -25,7 +25,7 @@ export async function handleRequest(
   if (
     !validateRequest(
       signature as string,
-      timestamp as number,
+      timestamp as string,
       rawBody as string,
     )
   ) {
