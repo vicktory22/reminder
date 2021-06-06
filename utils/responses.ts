@@ -1,8 +1,4 @@
-type ServerResponse = {
-  status?: number;
-  statusText?: string;
-  body?: string;
-};
+import { ServerResponse } from "../types.ts";
 
 const notFound = (): ServerResponse => ({
   status: 404,
