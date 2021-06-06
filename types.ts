@@ -7,6 +7,8 @@ export type ServerResponse = {
 export type ParsedRequest = {
   signature?: string;
   timestamp?: number;
-  body?: string;
+  rawBody?: string;
   error?: Error;
 };
+
+export type ParsedBody = Record<string, string | number | boolean>;
