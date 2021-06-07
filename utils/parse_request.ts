@@ -1,6 +1,6 @@
 import { ParsedRequest } from "../types.ts";
 import { ServerRequest } from "https://deno.land/std@0.97.0/http/server.ts";
-import { ValidationError } from "./validation-error.ts";
+import { ValidationError } from "../errors/validation.ts";
 import { readAll } from "https://deno.land/std@0.97.0/io/util.ts";
 
 export async function parseRequest(
