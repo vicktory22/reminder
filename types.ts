@@ -12,3 +12,15 @@ export type ParsedRequest = {
 };
 
 export type ParsedBody = Record<string, string | number | boolean>;
+
+export type MockServerRequestOptions = {
+  url?: string;
+  method?: string;
+  proto?: string;
+  protoMinor?: string;
+  protoMajor?: string;
+  headers?: Record<string, string>;
+  conn?: string;
+  r?: string;
+  w?: string;
+};
